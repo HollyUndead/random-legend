@@ -1,2 +1,9 @@
-<div>Photo of legend</div>
-<div>Name of legend</div>
+<h2>Legends</h2>
+<button type="button" (click)="click()">Randomize legends</button>
+
+<ul>
+  <li *ngFor="let legend of legends">
+    <img src="/assets/images/legends/{{ legend.img }}.png" alt="image" />
+    <p>{{ legend.name }}</p>
+  </li>
+</ul>
